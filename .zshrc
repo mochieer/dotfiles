@@ -1,3 +1,10 @@
+# Load the shell dotfiles, and then some:
+# * ~/.extra can be used for other settings you don’t want to commit.
+for file in ~/.{exports,aliases}; do
+    [ -r "$file" ] && [ -f "$file" ] && source "$file";
+done;
+unset file;
+
 # 色を使用出来るようにする
 autoload -Uz colors
 colors
@@ -16,8 +23,8 @@ setopt correct
 setopt re_match_pcre
 setopt prompt_subst
 
-PROMPT="%{$fg[red]%}[%n@%m %D{%y-%m-%d %T}]%{${reset_color}%} %~
-%(?.%{$fg[green]%}.%{$fg[blue]%})%(?!٩(๑❛ᴗ❛)ζﻭ <!(×﹏×%)ζ ՞༘ <)%{${reset_color}%} "
+PROMPT='%{$fg[red]%}[%n@%m %D{%y-%m-%d %T}]%{${reset_color}%} %~
+%(?.%{$fg[green]%}.%{$fg[blue]%})%(?!٩(๑❛ᴗ❛)ζﻭ <!(×﹏×%)ζ ՞༘ <)%{${reset_color}%} '
 PROMPT2='[%n]> '
 SPROMPT="%{$fg[cyan]%}%{$suggest%}≡(๑•̀ᴗ•́)ζ☝ < もしかして %B%r%b %{$fg[cyan]%}? ${reset_color}"
 
@@ -107,13 +114,5 @@ setopt extended_glob
 # キーバインド
 # ^R で履歴検索をするときに * でワイルドカードを使用出来るようにする
 bindkey '^R' history-incremental-pattern-search-backward
-
-
-# Load the shell dotfiles, and then some:
-# * ~/.extra can be used for other settings you don’t want to commit.
-for file in ~/.{exports,aliases}; do
-    [ -r "$file" ] && [ -f "$file" ] && source "$file";
-done;
-unset file;
 
 # vim:set ft=zsh:
