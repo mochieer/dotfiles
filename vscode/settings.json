@@ -1,0 +1,112 @@
+{
+    "editor.fontFamily": "'Source Han Code JP', monospace",
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.renderWhitespace": "all",
+    "editor.scrollBeyondLastLine": false,
+    "editor.renderControlCharacters": true,
+    "editor.matchBrackets": true,
+    "editor.links": true,
+
+    "terminal.integrated.shell.osx": "/bin/zsh",
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.fontFamily": "Monaco",
+
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+      },
+
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": false,
+
+    // for vim
+    "vim.insertModeKeyBindings": [
+        {
+            "before":["j", "j"],
+            "after":["<Esc>"]
+        },
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [";"],
+            "after": [":"]
+        },
+        {
+            "before": ["<leader>", "<leader>"],
+            "after": ["$"]
+        },
+        {
+            "before": ["<leader>", "l"],
+            "after": ["$"]
+        },
+        {
+            "before": ["<leader>", "h"],
+            "after": ["^"]
+        },
+        {
+            "before": ["<leader>", "j"],
+            "after": ["5", "0", "j"]
+        },
+        {
+            "before": ["<leader>", "k"],
+            "after": ["5", "0", "k"]
+        },
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                ">"
+            ],
+            "commands": [
+                "editor.action.indentLines"
+            ]
+        },
+        {
+            "before": [
+                "<"
+            ],
+            "commands": [
+                "editor.action.outdentLines"
+            ]
+        },
+    ],
+    "vim.leader": "<space>",
+    "vim.hlsearch": true,
+    "vim.visualstar": true,
+    "vim.useCtrlKeys": true,
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.ignorecase": true,
+    "vim.autoindent": true,
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false
+    },
+    "vim.statusBarColorControl": true,
+    "vim.statusBarColors.normal": "#8FBCBB",
+    "vim.statusBarColors.insert": "#BF616A",
+    "vim.statusBarColors.visual": "#B48EAD",
+    "vim.statusBarColors.visualline": "#B48EAD",
+    "vim.statusBarColors.visualblock": "#A3BE8C",
+    "vim.statusBarColors.replace": "#D08770",
+
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#8FBCBB",
+        "statusBar.noFolderBackground": "#8FBCBB",
+        "statusBar.debuggingBackground": "#8FBCBB"
+    },
+    "editor.minimap.enabled": false,
+    "powermode.presets": "fireworks",
+    "powermode.explosionSize": 18,
+    "powermode.enableStatusBarComboTimer": false,
+    "powermode.enableStatusBarComboCounter": false,
+    "powermode.explosionOffset": 0.5,
+    "powermode.enableShake": false,
+    "window.zoomLevel": 1.5,
+    "workbench.colorTheme": "Hybrid",
+    "workbench.iconTheme": "vscode-great-icons",
+}
