@@ -108,32 +108,12 @@ setopt extended_glob
 # ^R で履歴検索をするときに * でワイルドカードを使用出来るようにする
 bindkey '^R' history-incremental-pattern-search-backward
 
-# エイリアス
-alias la='ls -aF'
-alias ll='ls -lF'
-alias lla='ls -la'
 
-alias rm='rm -i'
-alias cp='cp -i'
-alias mv='mv -i'
-
-alias mkdir='mkdir -p'
-
-# grep alias
-alias grep="grep --color=auto"
-
-# cd alias
-function cdls(){
-    cd $1;
-    ls -FG;
-}
-alias cd="cdls"
-
-# sudo の後のコマンドでエイリアスを有効にする
-alias sudo='sudo '
-
-# グローバルエイリアス
-alias -g L='| less'
-alias -g G='| grep'
+# Load the shell dotfiles, and then some:
+# * ~/.extra can be used for other settings you don’t want to commit.
+for file in ~/.{exports,aliases}; do
+    [ -r "$file" ] && [ -f "$file" ] && source "$file";
+done;
+unset file;
 
 # vim:set ft=zsh:

@@ -1,0 +1,4 @@
+export PATH=/usr/local/bin:$PATH
+export PATH=$PATH:/Users/mochieer/.nodebrew/current/bin
+export PATH=$PATH:/usr/local/opt/php@7.1/bin
+export PATH=$PATH:/usr/local/opt/php@7.1/sbin
