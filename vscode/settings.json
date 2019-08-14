@@ -94,11 +94,7 @@
     "vim.statusBarColors.visualblock": "#A3BE8C",
     "vim.statusBarColors.replace": "#D08770",
 
-    "workbench.colorCustomizations": {
-        "statusBar.background": "#8FBCBB",
-        "statusBar.noFolderBackground": "#8FBCBB",
-        "statusBar.debuggingBackground": "#8FBCBB"
-    },
+    "workbench.colorCustomizations": {},
     "editor.minimap.enabled": false,
     "powermode.presets": "fireworks",
     "powermode.explosionSize": 18,
@@ -109,4 +105,12 @@
     "window.zoomLevel": 1.5,
     "workbench.colorTheme": "Hybrid",
     "workbench.iconTheme": "vscode-great-icons",
+
+    "svgPreview.style": {
+      "html": {
+        "background-position": "0 0, 13px 13px",
+        "background-size": "26px 26px",
+        "background-image": "linear-gradient(45deg, #141414 25%, transparent 25%, transparent 75%, #141414 75%, #141414), linear-gradient(45deg, #141414 25%, transparent 25%, transparent 75%, #141414 75%, #141414)",
+      }
+    }
 }
