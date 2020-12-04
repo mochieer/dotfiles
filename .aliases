@@ -7,6 +7,9 @@ else # macOS `ls`
     export LSCOLORS='BxBxhxDxfxhxhxhxhxcxcx'
 fi
 
+alias grep='rg'
+alias cat='bat'
+
 alias la='ls -aF ${colorflag}'
 alias ll='ls -lF ${colorflag}'
 alias lla='ls -laF ${colorflag}'
